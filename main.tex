@@ -1,0 +1,250 @@
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+% Resume in Latex
+% Author : Shubham Mazumder
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+
+\documentclass[letterpaper,12pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{soul}
+\usepackage{graphicx}
+\input{glyphtounicode}
+\usepackage[margin=0.8in]{geometry}
+
+%----------FONT OPTIONS----------
+% Sans-serif Fonts
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault,light]{inter}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage{roboto}
+% \usepackage[sfdefault,medium]{InriaSans}
+\usepackage[default]{sourcesanspro}
+
+% Serif Fonts
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% -------------------------------------
+%----------PAGE SETUP------------------
+% -------------------------------------
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% \addtolength{\oddsidemargin}{0.5pt}
+% \addtolength{\evensidemargin}{0.5pt}
+% \addtolength{\textwidth}{0.9in}
+% \addtolength{\topmargin}{-0.6in}
+% \addtolength{\textheight}{1.6in}
+
+% \addtolength{\oddsidemargin}{-.875in}
+% \addtolength{\evensidemargin}{-.875in}
+% \addtolength{\textwidth}{1.75in}
+% \addtolength{\topmargin}{-.875in}
+% \addtolength{\textheight}{1.75in}
+
+% URL style
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% ----------- Definitions -----------------------
+\def\spaceforrole{ }
+\definecolor{lightyellow}{cmyk}{0.00, 0.05, 0.20, 0.00} % Highlights
+\sethlcolor{lightyellow} % Highlights
+
+%--------------- Custom commands -----------------------
+
+\newcommand{\sectionspace}{
+\vspace{-10pt}
+}
+
+\newcommand{\subheadingtitlevspace}{
+\vspace{-3pt}
+}
+
+
+% Resume Item
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+% Titles
+\newcommand{\titleItem}[1]{
+  % \textsl{\textbf{#1}}
+  \textbf{#1}
+}
+
+
+% Highlighting
+\newcommand{\highlight}[1]{
+  \textsl{\textbf{#1}}
+  % \hl{\textsl{\textbf{#1}}}
+  % \textbf{#1}
+  % \textsl{\hl{#1}}
+}
+
+% Resume Subheading
+\newcommand{\resumeSubheading}[4]{
+  \item
+     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}l@{}l}     
+      {#1} & \titleItem{#3} | {#2} & \textit{#4}\\
+    \end{tabular*}\vspace{-10pt}
+}
+
+% \newcommand{\resumeSubheading}[4]{
+%   \item
+%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%       \textbf{#1} & #2 \\
+%       \textit{#3} & \textit{#4} \\
+%     \end{tabular*}\vspace{-8pt}
+% }
+
+
+
+% Resume Sub-sub heading
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{#1} & \textit{#2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+% Resume Project Heading
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & \textit{ #2} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+%Resume Subheading List
+\newcommand{\resumeSubHeadingListStart}{\subheadingtitlevspace\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%Resume Item List
+\newcommand{\resumeItemListStart}{
+% \vspace{-1pt}
+\begin{itemize}}
+\newcommand{\resumeItemListEnd}{
+% \vspace{-6pt}
+\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------
+
+\begin{document}
+% -------------------------------------
+%----------HEADING---------------------
+% -------------------------------------
+
+\begin{flushleft}
+  \textbf{\large Cao Nguyen, Tran} \\
+  \textit{Ho Chi Minh City} $|$
+  \textit{Email: tcnguyen.prof@gmail.com}
+
+\end{flushleft}
+
+% -------------------------------------
+%---------- PROFESSIONAL SUMMARY ------
+% -------------------------------------
+
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  {\item{
+        {Aspiring Backend Developer with a strong foundation in programming and a passion for
+            learning. Eager to contribute my skills in Python, Java to develop the project and gain
+            hands-on experience in building robust server-side applications.} \\
+        }}
+\end{itemize}
+\sectionspace
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Ho Chi Minh City Open University}{GPA : 3.0}
+{Computer Science}{August 2021 -- June 2025}
+\resumeSubHeadingListEnd
+\vspace{5pt}
+
+
+\section{Technical Skills}
+\subheadingtitlevspace
+\begin{itemize}[leftmargin=0.15in, label={}]
+  {\item{
+        \titleItem{Languages}{: Python, C/C++, SQL (MS-SQL, MySQL), JavaScript, Java} \\
+        \titleItem{Frameworks}{: ASP.NET (.NET Core, MVC), React Native, ReactJS, Flask, Django,  SpringMVC, Spring Boot} \\
+        \titleItem{API Tools}{: Swagger, Postman} \\
+        \titleItem{Basic Knowledge with Cloud}{: Amazon Web Services} \\
+        }}
+\end{itemize}
+\sectionspace
+
+
+
+
+% -------------------------------------
+%----------EXPERIENCE------------------
+% -------------------------------------
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\titleItem{{Major Assignment}} $|$ \emph{Online Flight Booking Management System}}{October - 2023}
+\resumeItemListStart
+\resumeItem{This project about an online platform for booking airline tickets. Leveraging my Python programming and web application development skills, I used the Flask framework to build MVC architect.}
+\resumeItem{Main tasks: Back-end (Build Database, Data modeling, handle controller of client).}
+\resumeItem{Version control: Git.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\titleItem{{Major Assignment}} $|$ \emph{e-Commerce Platform}}{February - 2024}
+\resumeItemListStart
+\resumeItem{
+  The app allows users to order different items and pay online. The system is built according to MVC architecture, using Restful API to communicate between client and server. The instructor rated the application as scalable and fulfilling the requirements.}
+\resumeItem{Main tasks: Fullstack}
+\resumeItem{Used technologies: Back-end (Django, Django Rest Framework), Front-end (React Native). }
+\resumeItem{API details: tcaonguyen.pythonanywhere.com }
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+% \resumeProjectHeading
+% {\titleItem{{Other projects}} $:$ \emph{github.com/caonguyen-tran}}
+% hi
+
+\section{Certifications}
+
+\end{document}
